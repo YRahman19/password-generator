@@ -110,9 +110,11 @@ var generateBtn = document.querySelector('#generate');
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
-
+  var userInput = prompt("Choose the amount of characters, you would like the password to contain");
+  console.log(userInput);
   passwordText.value = password;
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
+
