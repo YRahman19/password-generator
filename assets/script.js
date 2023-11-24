@@ -93,15 +93,17 @@ const upperCasedCharacters = [
 
 // Arrow Function to prompt users for the password length
  const getPasswordLength = () => {
- const userInput = prompt("Choose the amount of characters, you would like the password to contain (8-128)");
- if (userInput < 8 || userInput > 128) {
+  const userInput = prompt("Choose the amount of characters, you would like the password to contain (8-128)");
+   if (userInput < 8 || userInput > 128) {
+   alert("the password length is too short, choose between 8-128");
+  return getPasswordLength();
+ } else {
+  return parseInt(userInput);
+ }
+ };
 
- }
- }
-// function getPasswordOptions() {
-//   var userInput = prompt("Choose the amount of characters, you would like the password to contain (8-128)");
-//   console.log(userInput);
-// }
+
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
