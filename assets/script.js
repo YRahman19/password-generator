@@ -116,12 +116,22 @@ const characterTypes = () => {
    choosenTypes.push('uppercase');
   }
 
-  if () {
-    
+  if (confirm('Add numbers?')) {
+   choosenTypes.push('numbers');
   }
 
+  if (confirm('add special characters?')) {
+  choosenTypes.push('special numbers');
+  }
 
-}
+  if (choosenTypes.length === 0) {
+  alert('please choose minimum of one character type');
+  return characterTypes();
+  } else {
+    return choosenTypes;
+  }
+
+};
 
 
 
