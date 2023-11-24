@@ -102,6 +102,26 @@ const upperCasedCharacters = [
  }
  };
 
+// create a function to prompt user to choose different characters types and use if else or switch case to help
+// Arrow function for user to choose characters type
+
+const characterTypes = () => {
+  let choosenTypes = [];
+
+  if (confirm('Include lowercase characters?')) {
+   choosenTypes.push('lowercase');
+  }
+  
+  if (confirm('Include uppercase characters?')) {
+   choosenTypes.push('uppercase');
+  }
+
+  if () {
+    
+  }
+
+
+}
 
 
 
