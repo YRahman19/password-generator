@@ -92,11 +92,11 @@ const upperCasedCharacters = [
 
 
 // Arrow Function to prompt users for the password length
- const getPasswordLength = () => {
+ const passwordLength = () => {
   const userInput = prompt("Choose the amount of characters, you would like the password to contain (8-128)");
    if (userInput < 8 || userInput > 128) {
    alert("the password length is too short, choose between 8-128");
-  return getPasswordLength();
+  return passwordLength();
  } else {
   return parseInt(userInput);
  }
@@ -136,17 +136,44 @@ const characterTypes = () => {
 
 
 // Function for getting a random element from an array
-function getRandom(arr) {
-
+const getRandom = arr => {
+  return arr(Math.floor(Math.random) * arr.length);
 }
 
 // Function to generate password with user input
-function generatePassword() {
+const generatePassword = () => {
+const lengthPassword = passwordLength();
+const choosenTypes = characterTypes();
+
+let password = ' ';
+
+for (let i = 0; i < lengthPassword; i++) {
+let typeCharacter = choosenTypes[Math.floor(Math.random() * choosenTypes.length)];
+
+switch (typeCharacter) {
+ case 'lowercase':
+  password += getRandom(lowerCasedCharacters);
+  break;
+ case 'uppercase':
+  password += getRandom(upperCasedCharacters);
+  break;
+  case 'number':
+  password += getRandom(numericCharacters);
+    break;
+  case 'special':
+  password += getRandom(specialCharacters);
+    break;
+}
+}
+
+return password;
 
 }
 
+
+
 // Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
+// var generateBtn = document.querySelector('#generate');
 
 // // Write password to the #password input
 // function writePassword() {
