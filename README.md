@@ -27,7 +27,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ## Screenshot of my work
 
-![password-generator-screenshot](https://github.com/YRahman19/password-generator/assets/81781165/b92f8778-fb25-468c-a4d1-fa74956f6e71)
+<img width="1512" alt="password-screenshot" src="https://github.com/YRahman19/password-generator/assets/81781165/6848b6c9-48cb-46dd-8d28-7f315907888d">
+
 
 
 
