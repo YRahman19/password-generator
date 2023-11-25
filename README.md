@@ -34,3 +34,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 
 ## Link to my deployed Site
+https://yrahman19.github.io/password-generator/
